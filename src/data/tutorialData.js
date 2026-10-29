@@ -1,0 +1,8 @@
+export const tutorialData = [
+  { title: 'Una base de datos', icon: '🗄️', color: 'mint', text: 'Imagina un cuarto lleno de cajones. Cada cajón guarda pergaminos de un mismo tipo, todos ordenados para encontrarlos rápido.', spell: 'BASE DE DATOS = muchos cajones ordenados' },
+  { title: 'Crear una tabla', icon: '🪵', color: 'gold', text: 'Una tabla es como construir un estante. Las columnas son espacios con nombre y cada fila es un pergamino nuevo.', spell: 'CREATE TABLE estudiantes (nombre TEXT)' },
+  { title: 'Guardar datos', icon: '📥', color: 'coral', text: 'INSERT INTO coloca una fila nueva en el estante, como guardar la ficha de un nuevo aprendiz.', spell: "INSERT INTO estudiantes (nombre) VALUES ('Luna')" },
+  { title: 'Buscar datos', icon: '🔎', color: 'sky', text: 'SELECT dice qué quieres mirar, FROM señala el cajón y WHERE busca solo lo que cumple una condición.', spell: 'SELECT nombre FROM estudiantes WHERE edad > 8' },
+  { title: 'Alias mágicos', icon: '🏷️', color: 'gold', text: 'Un alias es un apodo. AS cambia el nombre que ves; e.nombre indica la columna nombre del cajón con apodo e.', spell: 'SELECT e.nombre AS aprendiz FROM estudiantes e' },
+  { title: 'Puentes entre tablas', icon: '🌉', color: 'mint', text: 'INNER JOIN crea un puente entre cajones. ON indica qué IDs coinciden para unir la información correcta.', spell: '... JOIN inscripciones i ON e.id_estudiante = i.id_estudiante' },
+];
